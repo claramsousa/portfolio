@@ -6,6 +6,7 @@
     <title>Portfólio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
 
@@ -35,37 +36,37 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <button class="visit-btn">Visite meu Github</button>
+        <a href="https://github.com/claramsousa"><button class="visit-btn">Visite meu Github</button></a>
 
     </header>
 
-    <section id="sobre" class="sobre">
+    <section id="sobre" class="sobre" data-aos="fade-up">
         <div class="sobre-container">
-            <img src="image.jpg" alt="">
+            <img src="images/image.jpg" alt="">
 
             <div class="info-box">
 
                 <div class="text">
                     <h3>Oi, eu sou</h3>
                     <h1>Maria Clara</h1>
-                    <span>Desenvolvedora de alguma coisa</span>
+                    <span>Estudante BTI</span>
                 </div>
 
                 <div class="btn-group">
                     <div class="btn">Baixar CV</div>
-                    <div class="btn">Contato</div>
+                    <a href="#contato"><div class="btn btn-secondary">Contato</div></a>
                 </div>
 
                 <div class="midias-sociais">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-square-linkedin"></i>
+                    <a id="git-btn" href="https://github.com/claramsousa"><i class="fa-brands fa-github"></i></a>
+                    <a id="linkedin-btn" href="https://www.linkedin.com/in/clara-macedo-5086b9303/"><i class="fa-brands fa-square-linkedin"></i></a>
                 </div>
         
             </div>
         </div>
     </section>
 
-    <seciton id="experiencia" class="experiencia">
+    <seciton id="experiencia" class="experiencia" data-aos="fade-up">
         
         <h2 class="section-titulo">Experiência</h2>
         
@@ -106,18 +107,18 @@
                 </div>
             </div>
 
-            <img src="image.jpg" alt="">
+            <img src="images/image.jpg" alt="">
         </div>
     </seciton>
 
-    <section id="projetos" class="projetos">
+    <section id="projetos" class="projetos" data-aos="fade-up">
 
         <h2 class="section-titulo">Projetos Recentes</h2>
 
         <div class="projetos-grid">
 
             <div class="projeto-card">
-                <img src="project-1.webp" alt="">
+                <img src="images/project-1.webp" alt="">
                 <h3>Projeto X</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Numquam, sit.</p>
@@ -128,7 +129,7 @@
             </div>
 
             <div class="projeto-card">
-                <img src="project-2.webp" alt="">
+                <img src="images/project-2.webp" alt="">
                 <h3>Projeto Y</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Numquam, sit.</p>
@@ -139,7 +140,7 @@
             </div>
 
             <div class="projeto-card">
-                <img src="project-3.webp" alt="">
+                <img src="images/project-3.webp" alt="">
                 <h3>Projeto Z</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Numquam, sit.</p>
@@ -151,10 +152,10 @@
         </div>
     </section>
 
-    <section class="contato" id="contato">
+    <section class="contato" id="contato" data-aos="fade-up">
         <div class="input-box">
 
-            <h2 class="section-titulo">Fale Comigo</h2>
+            <h2 class="section-titulo">Contato</h2>
 
             <div class="input">
                 <input type="text" placeholder="examplo@email.com">
@@ -191,5 +192,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </body>
 </html>
