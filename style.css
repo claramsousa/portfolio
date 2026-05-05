@@ -17,7 +17,6 @@
 }
 
 
-
 *{
     margin: 0;
     padding: 0;
@@ -49,9 +48,12 @@ header{
 body{
     background:
         radial-gradient(circle at top left, rgba(157, 170, 146, 0.7), transparent 30rem),
+        radial-gradient(circle at bottom right, rgba(157, 170, 146, 0.7), transparent 30rem),
         linear-gradient(180deg, #f8fbff 0%, #f3f6fb 46%, #f7f9fc 100%);
+
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 a {
@@ -79,7 +81,7 @@ a {
 li a{
     position: relative;
     color: white;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 li a::before{
@@ -92,7 +94,6 @@ li a::before{
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
     background: linear-gradient(to right, #294B29, #50623A);
-
 }
 
 li a:hover::before{
@@ -213,7 +214,6 @@ section{
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-
 .midias-sociais {
     display: flex;
     gap: 1rem;
@@ -237,12 +237,114 @@ section{
     transform: scale(1.1);
 }
 
-.section-titulo{
+.section-titulo {
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 3rem;
+    position: 933; 
+    display: block; 
+    color: var(--accent-strong);
 }
+
+
+.section-titulo::after {
+    content: '';
+    display: block;
+    width: 100px; 
+    height: 4px;
+    border-radius: 999px;
+    background-color: var(--accent-color);
+    margin: 10px auto 0 auto;
+}
+
+.tecnologias > *{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-groups {
+    display: grid;
+    gap: 2.25rem;
+}
+
+.skill-group {
+    padding-bottom: 2.25rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o título e a linha de cards horizontalmente */
+}
+
+.skill-group:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.skill-group h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem de linha em telas menores */
+    align-items: center;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 1rem; /* Espaçamento entre os cards */
+    margin-top: 1rem;
+}
+
+.skill-card {
+    background-color: var(--surface-strong);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.1rem 1.5rem;
+    height: 90px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+
+    width: 200px;
+
+    box-shadow: 0 1px 0 rgba(15, 23, 42, 0.03);
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+}
+
+.skill-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
+    background-color: #ffffff;
+    box-shadow: var(--shadow-card);
+}
+
+.skill-icon {
+    font-size: 1.8rem;
+    color: var(--text-main);
+    transition: color var(--transition-fast);
+}
+
+.skill-card:hover .fa-html5 { color: #e34c26; }
+.skill-card:hover .fa-css3-alt { color: #264de4; }
+.skill-card:hover .fa-js { color: #f7df1e; }
+.skill-card:hover .fa-git-alt { color: #f05032; }
+.skill-card:hover .fa-java { color: #f89820; }
+.skill-card:hover .devicon-spring-plain { color: #6db33f; }
+.skill-card:hover .devicon-postgresql-plain { color: #336791; }
+.skill-card:hover .devicon-postman-plain {color: #f37036;}
+
+
+.skill-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .experiencia-info{
     display: flex;
     align-items: center;
@@ -313,63 +415,62 @@ section{
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    border: 2px solid black;
+    border: 2px solid var(--accent-color);
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 .projeto-card:hover{
-    background-color: black;
-    color: white;
-    transform: translateY(-10px)scale(1.02)
+    transform: translateY(-10px)scale(1.02);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
 }
 .projeto-card img{
     width: 20vw;
     border-radius: 1rem;
 }
-.projeto-card:hover .btn{
-    border: 2px solid white;
-    color: white;
-}
-.projeto-card:hover .btn:hover{
-    border: 2px solid white;
-    background-color: white;
-    color: black;
-}
-.projeto-card h3{
-    font-size: 2rem;
-    font-weight: 500;
+
+.projeto-card .btn-secondary{
+    background-color: var(--hover-bg); 
+    color: var(--accent-color);
+    border-color: var(--accent-strong);
 }
 
-.input-box{
+.projeto-card:hover .btn-secondary:hover{
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    font-weight: 700;
+    text-wrap: nowrap;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.projeto-card h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--accent-strong);
+}
+.projeto-card p{
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.contato-card{
+    /* padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2rem;
-    margin-top: 5rem;
-}
-.input-box input{
+    gap: 1.5rem;
+    border: 2px solid var(--accent-color);
     border-radius: 3rem;
-    border: 2px solid black;
-    padding: 2rem 8rem;
-    font-size: 3rem
+    cursor: pointer;
+    transition: 0.3s ease-in-out; */
 }
 
-.input-box input::placeholder{
-    font-size: 3rem;
-}
-.input{
-    position: relative;
-}
-.input i{
-    position: absolute;
-    font-size: 4rem;
-    top: 50%;
-    left: 10px;
-    transform: translate(50%, -50%);
-}
 
 footer{
     bottom: 0;
@@ -381,6 +482,7 @@ footer{
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    color: transparent;
 }
 footer ul{
     display: flex;
