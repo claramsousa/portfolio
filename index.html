@@ -34,6 +34,10 @@
             </li>
 
             <li>
+                <a href="#formacao">Formação</a>
+            </li>
+
+            <li>
                 <a href="#contato">Contato</a>
             </li>
 
@@ -41,13 +45,11 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <a href="https://github.com/claramsousa"><button class="visit-btn">Visite meu Github</button></a>
-
     </header>
 
     <section id="sobre" class="sobre" data-aos="fade-up">
         <div class="sobre-container">
-            <img src="images/image.jpg" alt="">
+            <img src="assets/image.jpg" alt="Foto de Maria Clara">
 
             <div class="info-box">
 
@@ -58,13 +60,14 @@
                 </div>
 
                 <div class="btn-group">
-                    <div class="btn">Baixar CV</div>
-                    <a href="#contato"><div class="btn btn-secondary">Contato</div></a>
+                    <a href="assets/Maria_Clara_CV.pdf" download="Maria_Clara_CV.pdf" class="btn btn-primary">Baixar CV</a>
+    
+                    <a href="#contato" class="btn btn-secondary">Contato</a>
                 </div>
 
                 <div class="midias-sociais">
-                    <a id="git-btn" href="https://github.com/claramsousa"><i class="fa-brands fa-github"></i></a>
-                    <a id="linkedin-btn" href="https://www.linkedin.com/in/clara-macedo-5086b9303/"><i class="fa-brands fa-square-linkedin"></i></a>
+                    <a id="git-btn" href="https://github.com/claramsousa" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a id="linkedin-btn" href="https://www.linkedin.com/in/clara-macedo-5086b9303/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-linkedin"></i></a>
                 </div>
         
             </div>
@@ -130,7 +133,7 @@
         </div>
     </section>
 
-    <seciton id="experiencia" class="experiencia" data-aos="fade-up">
+    <section id="experiencia" class="experiencia" data-aos="fade-up">
         
         <h2 class="section-titulo">Experiência</h2>
         
@@ -152,7 +155,7 @@
                 </div>
             </div>
         </div>
-    </seciton>
+    </section>
 
     <section id="projetos" class="projetos" data-aos="fade-up">
 
@@ -161,31 +164,63 @@
         <div class="projetos-grid">
 
             <div class="projeto-card">
+                <div class="projeto-header">
+                    <i class="fa-solid fa-folder-open header-icon"></i>
+                </div>
+                <div class="projeto-info">
+                    <h3>Sistema de Gestão de Pedidos</h3>
+                    <p>Sistema de back-end para gestão de pedidos, desenvolvido com o objetivo de 
+                    aplicar padrões de arquitetura REST, persistência de dados relacional e 
+                    tratamento especializado de erros. O projeto contempla um CRUD completo 
+                    de usuários, produtos e pedidos, 
+                    com mapeamento de associações no banco de dados.</p>
+                </div>
+                <div class="tecnologias-usadas">
+                    <div class="tech-item">
+                        <i class="fa-brands fa-java"></i>
+                        <span class="tech-name">Java 21</span>
+                    </div>
+                    <div class="tech-item">
+                         <i class="devicon-spring-original"></i>
+                        <span class="tech-name">Spring-Boot 4.0</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-postgresql-plain"></i>
+                        <span class="tech-name">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="repo-link-group">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="repo-link">Repositório</a>
+                </div>
+            </div>
 
-                <div class="header-container">
-                    <!-- icone -->
+            <div class="projeto-card" style="--projeto-gradiente: linear-gradient(135deg, #789461 0%, #294B29 100%)";>
+                <div class="projeto-header">
+                    <i class="fa-solid fa-folder-open header-icon"></i>
                 </div>
                 
                 <div class="projeto-info">
-                    <h3>Projeto X</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Numquam, sit.</p>
+                    <h3>Estudo-Cardapio-API</h3>
+                    <p>API REST desenvolvida para o gerenciamento de cardápios de delivery, 
+                    criada como projeto final de um minicurso de Spring Boot. O objetivo 
+                    principal foi consolidar conhecimentos em persistência de dados, 
+                    arquitetura em camadas e autenticação simples.</p>
                 </div>
-                <div class="btn-group">
-                    <div class="btn btn-secondary">Github Repo</div>
+                <div class="tecnologias-usadas">
+                    <div class="tech-item">
+                        <i class="fa-brands fa-java"></i>
+                        <span class="tech-name">Java 17</span>
+                    </div>
+                    <div class="tech-item">
+                         <i class="devicon-spring-original"></i>
+                        <span class="tech-name">Spring-Boot 3</span>
+                    </div>
+                </div>
+                <div class="repo-link-group">
+                    <a href="https://github.com/claramsousa/Gestao-Cardapio-Spring" target="_blank" rel="noopener noreferrer" class="repo-link">Repositório</a>
                 </div>
             </div>
 
-
-
-            <div class="projeto-card">
-                <h3>Projeto Z</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Numquam, sit.</p>
-                <div class="btn-group">
-                    <div class="btn btn-secondary">Github Repo</div>
-                </div>
-            </div>
         </div>
     </section>
     
@@ -244,6 +279,10 @@
 
             <li>
                 <a href="#projetos">Projetos</a>
+            </li>
+
+            <li>
+                <a href="#formacao">Formação</a>
             </li>
 
             <li>
