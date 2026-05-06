@@ -3,6 +3,7 @@ const navLinks = document.querySelector('.nav-links');
 const techItems = document.querySelectorAll('.tech-item');
 const skillCards = document.querySelectorAll('.skill-card');
 
+// --- INICIALIZAÇÃO DE BIBLIOTECAS ---
 document.addEventListener("DOMContentLoaded", function() {
     AOS.init({
         duration: 800,  
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // --- LÓGICA DO MENU ---
 menuIcon.onclick = (e) => {
-    e.stopPropagation();
+    e.stopPropagation(); 
     navLinks.classList.toggle('active');
 };
 
@@ -25,17 +26,14 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 // --- LÓGICA DE CLIQUE GLOBAL ---
 document.addEventListener('click', (e) => {
-    // para menu
     if (!menuIcon.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('active');
     }
 
-    // para tecnologias
     if (!e.target.closest('.tech-item')) {
         techItems.forEach(item => item.classList.remove('active-tech'));
     }
 
-    // para skill cards
     if (!e.target.closest('.skill-card')) {
         skillCards.forEach(card => card.classList.remove('active-skill'));
     }

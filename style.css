@@ -378,6 +378,11 @@ section{
 .skill-card:hover .devicon-postgresql-plain, .skill-card.active-skill .devicon-postgresql-plain { color: #336791; }
 .skill-card:hover .devicon-postman-plain, .skill-card.active-skill .devicon-postman-plain {color: #f37036;}
 
+.skill-card.active-skill {
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow-card);
+}
 
 .skill-name {
     font-size: 1.1rem;
