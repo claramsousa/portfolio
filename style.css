@@ -369,14 +369,14 @@ section{
     transition: color var(--transition-fast);
 }
 
-.skill-card:hover .fa-html5 { color: #e34c26; }
-.skill-card:hover .fa-css3-alt { color: #264de4; }
-.skill-card:hover .fa-js { color: #f7df1e; }
-.skill-card:hover .fa-git-alt { color: #f05032; }
-.skill-card:hover .fa-java { color: #f89820; }
-.skill-card:hover .devicon-spring-plain { color: #6db33f; }
-.skill-card:hover .devicon-postgresql-plain { color: #336791; }
-.skill-card:hover .devicon-postman-plain {color: #f37036;}
+.skill-card:hover .fa-html5, .skill-card.active-skill .fa-html5{ color: #e34c26; }
+.skill-card:hover .fa-css3-alt, .skill-card.active-skill .fa-css3-alt { color: #264de4; }
+.skill-card:hover .fa-js, .skill-card.active-skill .fa-js{ color: #f7df1e; }
+.skill-card:hover .fa-git-alt, .skill-card.active-skill .fa-git-alt { color: #f05032; }
+.skill-card:hover .fa-java, .skill-card.active-skill .fa-java { color: #f89820; }
+.skill-card:hover .devicon-spring-plain, .skill-card.active-skill .devicon-spring-plain { color: #6db33f; }
+.skill-card:hover .devicon-postgresql-plain, .skill-card.active-skill .devicon-postgresql-plain { color: #336791; }
+.skill-card:hover .devicon-postman-plain, .skill-card.active-skill .devicon-postman-plain {color: #f37036;}
 
 
 .skill-name {
