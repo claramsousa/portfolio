@@ -12,3 +12,15 @@ document.addEventListener("DOMContentLoaded", function() {
 menuIcon.onclick = () => {
     navLinks.classList.toggle('active');
 }
+
+const techItems = document.querySelectorAll('.tech-item');
+
+techItems.forEach(item => {
+    item.addEventListener('click', () => {
+        techItems.forEach(otherItem => {
+            if (otherItem !== item) otherItem.classList.remove('active-tech');
+        });
+        
+        item.classList.toggle('active-tech');
+    });
+});

@@ -357,7 +357,7 @@ section{
     transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
 }
 
-.skill-card:hover {
+.skill-card:hover .skill-card.active-skill{
     transform: translateY(-2px);
     border-color: var(--accent-color);
     box-shadow: var(--shadow-card);
@@ -552,10 +552,10 @@ section{
     transition: max-width 0.3s ease, opacity 0.3s ease;
     white-space: nowrap;
 }
-.tech-item:hover {
+.tech-item:hover, .tech-item.active-tech {
     transform: scale(1.05);
 }
-.tech-item:hover .tech-name {
+.tech-item:hover .tech-name, .tech-item.active-tech .tech-name{
     max-width: 100px;
     opacity: 1;
 }
