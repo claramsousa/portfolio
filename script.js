@@ -7,7 +7,7 @@ const skillCards = document.querySelectorAll('.skill-card');
 document.addEventListener("DOMContentLoaded", function() {
     AOS.init({
         duration: 800,  
-        once: true,     
+        once: false,     
         offset: 100,    
     });
 });
