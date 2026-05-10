@@ -7,7 +7,7 @@
 
 Este repositório contém o código-fonte do meu portfólio pessoal, um espaço criado para centralizar a minha evolução técnica, projetos e trajetória acadêmica. Desenvolvido com HTML, CSS e JavaScript puros, sem frameworks ou dependências de build complexas. O objetivo foi construir uma interface ágil e responsiva para destacar de forma direta meu percurso universitário, minha vivência profissional e meus projetos de desenvolvimento.
 
-🔗 [Ver online](https://portfolio-maria-clara.vercel.app/)
+🔗 [Ver online](https://mariaclara-portfolio.vercel.app/)
 
 ---
 
